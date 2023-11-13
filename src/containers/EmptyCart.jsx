@@ -6,10 +6,7 @@ import { isDesktop } from "react-device-detect";
 
 export default function EmptyCart() {
   return (
-    <div
-      className="d-flex justify-content-center align-items-center flex-column  w-100"
-      style={{ height: "Calc(100vh - 200px", width: "100%" }}
-    >
+    <div className="d-flex justify-content-center align-items-center flex-column  w-100">
       <div
         style={{
           backgroundPosition: "center",

@@ -64,7 +64,11 @@ export default function ProductDetailsImage({ product, likesNumber }) {
               src={product.image}
               alt="product image"
               className="product-image"
-              style={{ aspectRatio: 1 / 1, maxWidth: "380px" }}
+              style={{
+                aspectRatio: 1 / 1,
+                maxWidth: "380px",
+                objectFit: "contain",
+              }}
             />
           </div>
         )}

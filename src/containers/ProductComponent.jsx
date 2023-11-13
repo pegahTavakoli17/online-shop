@@ -26,7 +26,7 @@ export default function ProductComponent({ product, offer }) {
         src={product.image}
         alt="product image"
         className=" product-image w-80"
-        style={{ aspectRatio: 1 / 1 }}
+        style={{ aspectRatio: 1 / 1, objectFit: "contain" }}
       />
       <h6 className="text-center p-1 p-sm-3">
         {product.title.length < 45
