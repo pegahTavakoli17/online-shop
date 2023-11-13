@@ -11,7 +11,7 @@ export default function Button({
   return (
     <div>
       <button
-        className={`${backGroundColor} rounded border-0  px-3 text-white d-flex justify-content-center align-items-center text-center`}
+        className={`${backGroundColor} rounded border-0  px-3 text-white d-flex justify-content-center align-items-center text-center myButton`}
         onClick={onClick}
         style={{ width: `${buttonWidth}`, height: "50px" }}
       >
