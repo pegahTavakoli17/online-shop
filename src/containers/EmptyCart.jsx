@@ -1,5 +1,5 @@
 import React from "react";
-import CartPic from "./cartPic";
+import CartPic from "./CartPic";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { isDesktop } from "react-device-detect";
