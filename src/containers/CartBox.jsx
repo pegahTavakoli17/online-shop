@@ -41,6 +41,7 @@ export default function CartBox({ product, onIsInCartChange }) {
             alt="product image"
             width={150}
             height={150}
+            style={{ objectFit: "contain" }}
           />
         </Link>
         <div className="col-1"> &nbsp; </div>

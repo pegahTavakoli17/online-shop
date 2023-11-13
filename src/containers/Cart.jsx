@@ -23,14 +23,14 @@ export default function Cart() {
       return Object.values(uniqeObjects);
     };
     setUniqueCart(getUniqueCart());
-  }, cart);
+  }, [cart, cart.length]);
   return (
     <div className="cart-page">
       <div className="carts-box mx-auto p-4 w-100">
         {cart.length > 0 &&
-          uniqueCart.map((item, index) => (
-            <div key={index}>
-              {item.count && isInCart && (
+          uniqueCart.map((item, id) => (
+            <div key={id}>
+              {item.count > 0 && (
                 <CartBox
                   product={item}
                   onIsInCartChange={handleIsInCartChange}

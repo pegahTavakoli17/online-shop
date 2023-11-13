@@ -27,7 +27,9 @@ export default function Counter({ product, onIsInCartChange, countIsChanged }) {
         cart.splice(index, 1);
         dispatch(setCartProducts(cart));
         dispatch(updateProductCount(count - 1));
-        setProductCount(ProductCount - 1);
+        if (ProductCount > 0) {
+          setProductCount(ProductCount - 1);
+        }
       }
     }
   };
