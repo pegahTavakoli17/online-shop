@@ -71,7 +71,6 @@ export default function ProductsList() {
   useEffect(() => {
     fetchProducts();
   }, [selectedCategory, removingSearch]);
-  console.log(discountedProducts);
   return (
     <div className="d-flex flex-column mainPage">
       <div className="customPage d-flex flex-wrap pb-0 pt-0">

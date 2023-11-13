@@ -32,9 +32,7 @@ export default function productDetails() {
     const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
     try {
       if (response.status == 200) {
-        offer == false
-          ? (response.data.discounted = false)
-          : (response.data.discounted = true);
+        response.data.discounted = offer;
         dispatch(selectedProduct(response.data));
         setLikesCount(response.data.rating.count);
       }

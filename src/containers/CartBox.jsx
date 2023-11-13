@@ -54,23 +54,30 @@ export default function CartBox({ product, onIsInCartChange }) {
               <div className="mb-2 mt-4 mt-md-2 w-100 d-flex">
                 <span className="text-primary">price:</span>
                 <span>
-                  {product.discounted ? (
+                  {product.discounted == "true" ? (
                     <div>
                       <del className="px-1 text-secondary">{product.price}</del>
-                      <span className="mx-1">${product.price * 0.8}</span>
+                      <span className="mx-1">
+                        ${Math.floor(product.price * 0.8)}
+                      </span>
                     </div>
                   ) : (
-                    <span className="px-1 text-warning">${product.price}</span>
+                    <span className="px-1 text-secondary">
+                      ${product.price}
+                    </span>
                   )}
                 </span>
               </div>
               <div className="my-2 text-left d-flex justify-content-start">
                 <span className="text-primary">final price:</span>
-                {product.discounted ? (
+                {product.discounted == "true" ? (
                   <span className="px-1 text-secondary text-left">
                     {productCount}
-                    <i className="bi bi-x"></i> {product.price * 0.8} =
-                    <span className="mx-1">{discountedFinalPrice}</span>
+                    <i className="bi bi-x"></i>{" "}
+                    {Math.floor(product.price * 0.8)} =
+                    <span className="mx-1">
+                      {Math.floor(discountedFinalPrice)}
+                    </span>
                   </span>
                 ) : (
                   <span className="px-1 text-secondary text-left">
@@ -80,7 +87,7 @@ export default function CartBox({ product, onIsInCartChange }) {
                   </span>
                 )}
               </div>
-              {product.discounted && (
+              {product.discounted == "true" && (
                 <Chip
                   className="bg-danger text-white text-left mt-3"
                   label="20%"
