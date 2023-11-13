@@ -1,0 +1,217 @@
+.cart-icon{
+  font-size: 22px;
+   font-weight: bold;
+}
+.button-icon{
+padding-right: 3px;
+}
+.successful-pic{
+  width: 400px;
+  height: 400px;
+  background-position: center;
+   background-size: cover;
+}
+.pointer{
+  cursor: pointer;
+}
+.product-bordered-card{
+  border: 1px solid #007bff;
+  width: 100% !important ;
+  padding: 20px;
+  height:fit-content !important;
+  border-radius: 12px;
+  background:white;
+  text-align: start;
+}
+.product-title{
+  width: 75%;
+  text-align: start !important;
+}
+.mainPage{
+  height: fit-content;
+  min-height: calc(100vh - 100px);
+}
+.details-box{
+  height: fit-content;
+ min-height: 70vh;
+overflow: auto;
+padding-bottom: 100px;
+}
+.customPage{
+  background:rgb(233, 232, 232);
+  padding: 20px;
+  padding-bottom: 200px !important;
+  min-height: 100vh;
+  height: fit-content;
+}
+.productDetails-page{
+  background:rgb(233, 232, 232) !important;
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+  height: fit-content;
+}
+.cart-page{
+  background:rgb(233, 232, 232) !important;
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+  height: fit-content; 
+}
+.product-card{
+width: 300 !important;
+ height: 320px !important;
+}
+.product-image{
+  width: 100% !important;
+  min-width: 280px;
+  height:60% !important;
+  padding: 20px !important;
+  text-align:center !important;
+  vertical-align: middle !important;
+  background-size: cover !important;
+  background-position: center !important;
+   }
+   .counter-box{
+    border:1px solid #007bff;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    border-radius: 12px;
+   }
+   .carts-box{
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 12px;
+width: 80%;
+text-align: center;
+   }
+@media screen and (max-width:600px){
+  .swiper-button-prev , .swiper-button-next{
+  display: none;
+    }
+    .swiper-button-prev.swiper-button-disabled , .swiper-button-next.swiper-button-disabled{
+      display: none;
+
+     }
+  .counter-box{
+    width: 100%;
+    height: 40px;
+   
+  }
+  .successful-pic{
+    width: 350px;
+    height: 350px;
+  }
+  .product-title{
+width: 100%;
+text-align: center !important;
+  }
+  .product-bordered-card{
+    border: 1px solid #ccc;
+    width: 100% !important ;
+    height:max-content !important;
+    border-radius: 12px;
+    background:white;
+    text-align: center;
+  }
+  .productDetails-page{
+    background:rgb(248, 246, 246);
+    padding: 20px;
+    min-height: 100vh !important;
+    height: auto;
+  }
+  .product-card{
+  width: 320px;
+  height: 320px;
+ }
+ .product-image{
+  min-width: 250px !important;
+  height: 180px;
+  text-align:center;
+vertical-align: middle;
+padding: 5px;
+padding-top: 10px;
+ }
+.mySwiper{
+  height: 420px !important;
+}}
+ .input-style{
+  -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    min-height: 38px;
+    position: relative;
+    -webkit-transition: all 100ms;
+    transition: all 100ms;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+box-shadow: none;
+padding: 10px;
+outline: none !important;
+ }
+ .mySwiper{
+  height: 400px;
+  background-image: linear-gradient(to bottom right, rgb(255, 123, 0),rgb(7, 7, 110));
+align-items: center !important;  
+ }
+ .swiper-slide{
+  display: flex !important;
+  align-items: center !important;
+ }
+ .swiper-button-prev , .swiper-button-next{
+ background: #007bff!important;
+ border-radius: 50%;
+ width: 60px;
+ height: 60px;
+ opacity: 1 !important;
+ color:white;
+ }
+ .swiper-button-prev.swiper-button-disabled , .swiper-button-next.swiper-button-disabled{
+  background: #007bff!important;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.35!important;
+  color:white;
+  }
+.product-img{
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.rating-box{
+  width: 90px;
+  height: 30px;
+  background-color: #555151;
+  color: white;
+  border-radius: 11px;
+  margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 450;
+margin-left: 10px;
+}
+.text-orange{
+  color: #ff7b00;
+}
+.bg-orange{
+  background-color: #ff7b00;
+}
+.text-grey{
+  color:rgb(71, 66, 66)
+}
+.cart-box{
+border-radius: 18px;
+padding: 20px;
+margin-top: 15px;
+}
