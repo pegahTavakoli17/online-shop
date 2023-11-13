@@ -74,8 +74,8 @@ export default function ProductDetailsText({ product, offer, isInCart }) {
           <PurchaseButton product={product} isInCart={isInCart} />
         </div>
         {/* description */}
-        <div className="mt-3  d-flex justify-content-start text-left mr-auto">
-          <p className="text-secondery text-left mr-auto">
+        <div className="mt-3  d-flex justify-content-start text-left mr-auto w-100">
+          <p className="text-secondery text-left mr-auto w-100">
             {product.description}
           </p>
         </div>
