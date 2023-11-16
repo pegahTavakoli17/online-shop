@@ -23,12 +23,12 @@ export default function SearchBox({
   ];
   return (
     <div
-      className="d-flex flex-column flex-sm-row  justify-content-between mt-5"
+      className="d-flex flex-column flex-sm-row  justify-content-between mt-5 w-100"
       style={{ padding: "20px" }}
     >
       <div
         className="col-sm-5 col-12 mt-5 mt-md-0 "
-        style={{ minWidth: 314, height: 43 }}
+        style={{ minWidth: 280, height: 43 }}
       >
         <Select
           defaultValue={{
@@ -43,11 +43,12 @@ export default function SearchBox({
           className="border border-3 border-primary rounded-3"
         />
       </div>
-      <div className="col-sm-5 col-12 ml-5">
+      <div className="col-span-2 d-none d-md-block">&nbsp;</div>
+      <div className="col-sm-5 col-12 ">
         <Paper
           className="input-style mt-4 mt-sm-0 ml-3 border border-3 border-primary rounded-3"
           sx={{
-            minWidth: 314,
+            minWidth: 280,
             height: 43,
           }}
         >

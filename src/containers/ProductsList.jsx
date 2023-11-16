@@ -72,8 +72,8 @@ export default function ProductsList() {
     fetchProducts();
   }, [selectedCategory, removingSearch]);
   return (
-    <div className="d-flex flex-column mainPage">
-      <div className="customPage d-flex flex-wrap pb-0 pt-0">
+    <div className="d-flex flex-column mainPage w-100">
+      <div className="customPage d-flex flex-wrap pb-0 pt-0 w-100">
         {loading && (
           <div className="d-flex justify-content-center align-items-center w-100">
             <CircleLoader color="#007bff" />
@@ -83,21 +83,23 @@ export default function ProductsList() {
           <div className="d-flex flex-column w-100 p-0">
             {/* product slider */}
             <div
-              className="w-100 px-0"
+              className="w-100 px-0 mb-2"
               style={{ height: "350px", paddingBottom: "200px" }}
             >
               {!loading && <ProductSlider products={discountedProducts} />}
             </div>
             {/* select and search */}
-            <SearchBox
-              selectedCategory={selectedCategory}
-              handleCategory={handleCategory}
-              searchField={searchField}
-              handleSearch={handleSearch}
-              handleKeyUp={handleKeyUp}
-              doSearch={doSearch}
-              removeSearch={removeSearch}
-            />
+            <div className="d-flex justify-content-center w-100">
+              <SearchBox
+                selectedCategory={selectedCategory}
+                handleCategory={handleCategory}
+                searchField={searchField}
+                handleSearch={handleSearch}
+                handleKeyUp={handleKeyUp}
+                doSearch={doSearch}
+                removeSearch={removeSearch}
+              />
+            </div>
             {/* product list */}
             <div className="d-flex flex-wrap">
               {products.length != 0 &&
