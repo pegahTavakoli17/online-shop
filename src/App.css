@@ -61,7 +61,7 @@ width: 300 !important;
  height: 320px !important;
 }
 .product-card:hover{
-  box-shadow:5px 10px  8px #007bff;
+  box-shadow:5px 5px  8px #69a0db;
 }
 .product-image{
   width: 100% !important;
