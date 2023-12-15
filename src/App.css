@@ -179,8 +179,8 @@
 .swiper-button-next {
   background: #007bff !important;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   opacity: 1 !important;
   color: white;
 }
@@ -188,10 +188,14 @@
 .swiper-button-next.swiper-button-disabled {
   background: #007bff !important;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   opacity: 0.35 !important;
   color: white;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: small;
 }
 .product-img {
   width: 500px;
@@ -228,4 +232,6 @@
 }
 .myButton:hover {
   box-shadow: 5px 5px 8px #b6b1b1;
+}
+.menu {
 }
