@@ -234,4 +234,23 @@
   box-shadow: 5px 5px 8px #b6b1b1;
 }
 .menu {
+  background-color: rgb(227, 227, 230);
+  height: 100vh;
+  width: 50vw;
+  z-index: 5 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 16px;
+}
+.menu-item {
+  padding: 10px;
+  font-weight: 500;
+}
+.menu-item:hover {
+  background-color: #cad0e2;
+  width: 100%;
 }
